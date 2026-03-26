@@ -1,22 +1,20 @@
 name: Feature Request
-description: Suggest a new feature or improvement for mem0
+description: Propose a new feature or enhancement
 labels: ["enhancement"]
-
 body:
   - type: dropdown
-    id: component
+    id: area
     attributes:
-      label: Component
-      description: Which part of mem0 does this relate to?
+      label: Area
+      description: Which part of the system does this affect?
       options:
-        - Core / Python SDK
-        - TypeScript SDK
-        - Vector Store (Qdrant, PGVector, Redis, Chroma, etc.)
-        - Graph Memory (Neo4j, Memgraph, etc.)
-        - Ollama / Local Models
-        - OpenClaw
-        - REST API
-        - Benchmarks / Evals
+        - Core modules
+        - Agent roster
+        - Infrastructure (Docker, Tailscale, Prometheus)
+        - Discord Bridge
+        - CLI / Console scripts
+        - Configuration
+        - Documentation
         - Other
     validations:
       required: true
@@ -25,17 +23,18 @@ body:
     id: description
     attributes:
       label: Description
-      value: |
-        ### Use Case
-
-        What problem are you trying to solve?
-
-        ### Proposed Solution
-
-        How should this work? Include API examples or pseudocode if helpful.
-
-        ### Alternatives Considered
-
-        Any workarounds you've tried or other approaches considered.
+      description: What do you want to add or change?
     validations:
       required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this needed? What problem does it solve?
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Other approaches you have thought about
