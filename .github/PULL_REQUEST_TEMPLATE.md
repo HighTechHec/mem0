@@ -1,38 +1,23 @@
-## Linked Issue
+## Summary
 
-Closes #<!-- issue number -->
+<!-- What does this PR do? Keep it to 1-3 sentences. -->
 
-## Description
+## Changes
 
-<!-- What does this PR do? Why is it needed? -->
+<!-- List the key changes made in this PR. -->
 
-## Type of Change
+-
 
-- [ ] Bug fix (non-breaking change that fixes an issue)
-- [ ] New feature (non-breaking change that adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to change)
-- [ ] Refactor (no functional changes)
-- [ ] Documentation update
+## Testing
 
-## Breaking Changes
+<!-- How was this tested? -->
 
-<!-- If this is a breaking change, describe what breaks and the migration path. Delete this section if not applicable. -->
-
-N/A
-
-## Test Coverage
-
-- [ ] I added/updated unit tests
-- [ ] I added/updated integration tests
-- [ ] I tested manually (describe below)
-- [ ] No tests needed (explain why)
-
-<!-- Describe how you tested this, or link to CI results. -->
+- [ ] Ran locally
+- [ ] Verified with `ruff check .`
+- [ ] Tested affected module(s)
 
 ## Checklist
 
-- [ ] My code follows the project's style guidelines
-- [ ] I have performed a self-review of my code
-- [ ] I have added tests that prove my fix/feature works
-- [ ] New and existing tests pass locally
-- [ ] I have updated documentation if needed
+- [ ] No secrets or credentials in committed files
+- [ ] Console scripts updated in `pyproject.toml` if new entry points added
+- [ ] `task.md` updated if completing a backlog item
